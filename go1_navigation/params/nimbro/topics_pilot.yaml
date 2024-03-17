@@ -1,0 +1,19 @@
+topics:
+- name: "/$(arg robot_name)/waypoints"
+  compress: true
+  rate: 10.0
+- name: "/$(arg robot_name)/home"
+  compress: true
+  rate: 10.0
+- name: "/$(arg robot_name)/waypoints/feedback"
+  compress: true
+  rate: 10.0
+- name: "/$(arg robot_name)/home/feedback"
+  compress: true
+  rate: 10.0
+- name: "/$(arg robot_name)/wolf_navigation/goto/pose"
+  compress: true
+  rate: 10.0
+- name: "/$(arg robot_name)/initialpose"
+  compress: true
+  rate: 10.0

@@ -1,0 +1,33 @@
+services:
+ - name: /$(arg robot_name)/wolf_navigation/update_trigger
+   type: rt_gui/Void
+ - name: /$(arg robot_name)/wolf_navigation/update_text
+   type: rt_gui/Text
+ - name: /$(arg robot_name)/wolf_navigation/update_list
+   type: rt_gui/List
+ - name: /$(arg robot_name)/wolf_navigation/update_label
+   type: rt_gui/Text
+ - name: /$(arg robot_name)/wolf_navigation/update_int
+   type: rt_gui/Int
+ - name: /$(arg robot_name)/wolf_navigation/update_double
+   type: rt_gui/Double
+ - name: /$(arg robot_name)/wolf_navigation/update_bool
+   type: rt_gui/Bool
+ - name: /$(arg robot_name)/wolf_navigation/update_check
+   type: rt_gui/Check
+ - name: /wolf_controller/update_trigger
+   type: rt_gui/Void
+ - name: /wolf_controller/update_text
+   type: rt_gui/Text
+ - name: /wolf_controller/update_list
+   type: rt_gui/List
+ - name: /wolf_controller/update_label
+   type: rt_gui/Text
+ - name: /wolf_controller/update_int
+   type: rt_gui/Int
+ - name: /wolf_controller/update_double
+   type: rt_gui/Double
+ - name: /wolf_controller/update_bool
+   type: rt_gui/Bool
+ - name: /wolf_controller/update_check
+   type: rt_gui/Check

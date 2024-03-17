@@ -1,0 +1,55 @@
+topics:
+
+ #- name: "/$(arg robot_name)/tf" # topic name
+ #  compress: true # enable bz2 compression
+ #  rate: 20.0 # rate limit
+ #  resend: true
+ #- name: "/$(arg robot_name)/tf_static"
+ #  compress: true
+ #  rate: 20.0
+ #  resend: true
+ #- name: "/$(arg robot_name)/joint_states"
+ #  compress: true
+ #  resend: true
+ #  rate: 20.0
+
+ - name: "/$(arg robot_name)/tf_throttle/tf"
+   compress: true
+   rate: 20.0
+ - name: "/$(arg robot_name)/map"
+   compress: true
+   rate: 1.0
+   resend: true
+ - name: "/$(arg robot_name)/gps/filtered"
+   compress: true
+   rate: 1.0
+ - name: "/$(arg robot_name)/waypoints/update"
+   compress: true
+   rate: 10.0
+ - name: "/$(arg robot_name)/waypoints/feedback"
+   compress: true
+   rate: 10.0
+ - name: "/$(arg robot_name)/waypoints/update_full"
+   compress: true
+   rate: 10.0
+ - name: "/$(arg robot_name)/waypoints/connections"
+   compress: true
+   rate: 1.0
+ - name: "/$(arg robot_name)/home/update"
+   compress: true
+   rate: 10.0
+ - name: "/$(arg robot_name)/home/feedback"
+   compress: true
+   rate: 10.0
+ - name: "/$(arg robot_name)/home/update_full"
+   compress: true
+   rate: 10.0
+ - name: "/$(arg robot_name)/move_base/TebLocalPlannerROS/global_plan"
+   compress: true
+   rate: 1.0
+ - name: "/$(arg robot_name)/move_base/TebLocalPlannerROS/local_plan"
+   compress: true
+   rate: 1.0
+ - name: "/$(arg robot_name)/move_base/current_goal"
+   compress: true
+   rate: 1.0
