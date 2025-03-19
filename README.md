@@ -1,7 +1,7 @@
 ## Navigation Stack
 
 ### How to launch the Navigation Stack ###
-We must install and run two Docker "ERF2024/dog_challenge" and "manipulation_task". For the second Docker conteiner you can follow the previously explained (git@github.com:lar-unibo/manipulation_task).
+We must install and run two Docker "ERF2024/dog_challenge" and "manipulation_task". For the second Docker conteiner you can follow the previously explained (git@github.com:Ema0021/wolf-setup).
 
 For the first conteiner Docker you have to:
 - open a terminal-> create a ros workspace ->on the terminal:  mkdir -p NAMEWORKSPACE_ws/src
@@ -36,6 +36,7 @@ Now we are ready to launch the node:
 
 ```
 roslaunch go1_navigation robot_navigation.launch
+
 ```
 This will open an RVIZ interface where you have access to the wolf_controller and wolf_navigation.
 Where the first allows you to control the robot, while in "wolf_navigation", we have plugins to navigate the robot ("explorer","goto", "homing", "waypoint").
