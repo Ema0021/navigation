@@ -36,7 +36,6 @@ Now we are ready to launch the node:
 
 ```
 roslaunch go1_navigation robot_navigation.launch
-
 ```
 This will open an RVIZ interface where you have access to the wolf_controller and wolf_navigation.
 Where the first allows you to control the robot, while in "wolf_navigation", we have plugins to navigate the robot ("explorer","goto", "homing", "waypoint").
